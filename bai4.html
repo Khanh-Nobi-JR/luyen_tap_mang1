@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let arr = [2,4,5,7,8,9];
+    let size =arr.length;
+    let first = 0;
+    let last = size -1;
+
+    document.write(arr);
+    while (first<last){
+        let a = arr[first];
+        arr[first] = arr[last];
+        arr[last] = a;
+        first++;
+        last--;
+    }
+    document.write("<br>"+"mảng sau khi đảo: "+ arr );
+</script>
+</body>
+</html>

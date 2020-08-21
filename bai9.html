@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<h3>nhập mảng c là tập hợp của mảng a và mảng b</h3>
+<script>
+    let a = [2,4,6,8,10,12,14,16,18,20];
+    let b = [1,3,5,7,9,11,13,15,17,19];
+    let c = [];
+    document.write("mảng a: "+a)
+    document.write("<br>"+"mảng b: " + b)
+    for (let i = 0; i < a.length; i++) {
+        if (a.indexOf(a[i]) !== -1 && b.indexOf(b[i]) !== -1){
+            c.push(b[i],a[i]);
+        }
+    } document.write("<br>"+"mảng c: " +c);
+</script>
+</body>
+</html>

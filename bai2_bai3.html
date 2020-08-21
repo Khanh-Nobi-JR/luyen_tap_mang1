@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<h2>in mảng, phần tử lớn nhất và vị trí, trung bình các phần tử trong mảng</h2>
+<div id="result"></div>
+<script>
+let arr = [1,4,7,9,12,32,5,7,8,7];
+let size = arr.length;
+document.write(arr);
+document.write("<br>"+ "phan tu lon nhat la: " + maxArr(arr))
+document.write("<br>" + "trung binh các ptu là:" + average(arr) );
+function maxArr(arr){
+    let max = arr[0];
+    let maxIndex;
+    if (size>0){
+        for (let i = 1; i < size; i++) {
+            if (arr[i] > max){
+                max = arr[i];
+                maxIndex = i;
+            }
+        } return max + " có index la: " + maxIndex;
+    } else {
+        return "mang rong";
+    }
+}
+function average(arr){
+    let total = 0;
+    for (let i = 0; i < size; i++) {
+          total += arr[i];
+          average = total/size;
+    } return average;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+    let arr = [4,5,7,2,3,9,8,13,15,6];
+    // let max = arr[0];
+    // let result = [];
+    // let min = arr[1];
+    for (let i = 0; i < arr.length; i++) {
+        if ((arr[i] - arr[0]) > 0){
+            arr[0]= arr[i];
+            arr[i]= arr[0];
+;        }
+    } document.write(arr);
+</script>
+</body>
+</html>
