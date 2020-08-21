@@ -7,6 +7,7 @@
 <body>
 <script>
     let arr = [4,5,7,2,3,9,8,13,15,6];
+    document.write("mảng ban đầu: "+arr);
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] < arr[j]){
@@ -17,7 +18,7 @@
             }
         }
 
-    } document.write(arr);
+    } document.write("<br>" +"mảng sắp xếp"+  arr);
 //     document.write(arr);
 //     arr.sort(function (a, b){
 //         return b - a
